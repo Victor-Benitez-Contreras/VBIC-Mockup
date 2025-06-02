@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Descargar Múltiples GIFs</title>
+</head>
+<body>
+    <div class="gif-container">
+        <img src="URL_GIF_1.gif" alt="GIF 1">
+        <h5 class="nombre-gif">Icono llave animada</h5>
+        <button class="btn-download" data-gif-src="URL_GIF_1.gif" data-nombre-gif="Icono llave animada">Descargar</button>
+    </div>
+
+    <div class="gif-container">
+        <img src="URL_GIF_2.gif" alt="GIF 2">
+        <h5 class="nombre-gif">Carga animada</h5>
+        <button class="btn-download" data-gif-src="URL_GIF_2.gif" data-nombre-gif="Carga animada">Descargar</button>
+    </div>
+
+    <div class="gif-container">
+        <img src="URL_GIF_3.gif" alt="GIF 3">
+        <h5 class="nombre-gif">Explosión animada</h5>
+        <button class="btn-download" data-gif-src="URL_GIF_3.gif" data-nombre-gif="Explosión animada">Descargar</button>
+    </div>
+
+    <script>
+        const botonesDescargar = document.querySelectorAll('.btn-download');
+
+        botonesDescargar.forEach(boton => {
+            boton.addEventListener('click', function() {
+                const gifURL = this.dataset.gifSrc;
+                const nombreGIF = this.dataset.nombreGif;
+                const nombreArchivo = nombreGIF + '.gif';
+
+                const a = document.createElement('a');
+                a.href = gifURL;
+                a.download = nombreArchivo;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            });
+        });
+
+    </script>
+</body>
+</html>
