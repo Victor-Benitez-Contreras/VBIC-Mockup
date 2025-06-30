@@ -117,3 +117,94 @@ async function copiarSVGAlPortapapeles(svgElement, escala) {
                 });
             });
         });
+
+
+// Funcion de filtro de iconos
+
+document.addEventListener('DOMContentLoaded', () => {
+    const items = document.querySelectorAll('.items-container .item');
+    const etiquetasContainer = document.getElementById('tag-filter-container');
+    const noResultsMessage = document.getElementById('no-results');
+    const limpiarBtn = document.getElementById('clean-filter');
+
+    
+    // Usamos un Set para almacenar etiquetas únicas y evitar duplicados
+    const todasLasEtiquetas = new Set();
+    items.forEach(item => {
+        const etiquetas = item.dataset.etiquetas.split(' ');
+        etiquetas.forEach(etiqueta => todasLasEtiquetas.add(etiqueta));
+    });
+
+    // Crear un botón por cada etiqueta única
+    todasLasEtiquetas.forEach(etiqueta => {
+        const boton = document.createElement('button');
+        boton.classList.add('tag-filter');
+        boton.textContent = etiqueta;
+        boton.dataset.tag = etiqueta; // Guardamos la etiqueta en un data attribute
+        etiquetasContainer.appendChild(boton);
+    });
+
+    const tagButtons = document.querySelectorAll('.tag-filter');
+
+    // --- 2. LÓGICA DE FILTRADO ---
+
+    const filtrarItems = () => {
+        
+        const etiquetasActivas = Array.from(document.querySelectorAll('.tag-filter.active'))
+                                     .map(btn => btn.dataset.tag);
+
+        let itemsVisibles = 0;
+
+        items.forEach(item => {
+            const etiquetasDelItem = item.dataset.etiquetas.split(' ');
+            
+            // Si no hay filtros activos, mostrar todos los items
+            if (etiquetasActivas.length === 0) {
+                item.classList.remove('hide');
+                itemsVisibles++;
+                return; 
+            }
+
+            // Comprobar si el item contiene TODAS las etiquetas activas
+            const coincide = etiquetasActivas.every(etiquetaActiva => 
+                etiquetasDelItem.includes(etiquetaActiva)
+            );
+
+            if (coincide) {
+                item.classList.remove('hide');
+                itemsVisibles++;
+            } else {
+                item.classList.add('hide');
+            }
+        });
+
+        // Mostrar u ocultar el mensaje de "no hay resultados"
+        if (itemsVisibles === 0) {
+            noResultsMessage.classList.remove('hide');
+        } else {
+            noResultsMessage.classList.add('hide');
+        }
+    };
+
+    // --- 3. AÑADIR EVENT LISTENERS A LOS BOTONES ---
+
+    tagButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Alternar la clase 'active' en el botón clickeado
+            button.classList.toggle('active');
+            // Volver a filtrar los items con los nuevos filtros
+            filtrarItems();
+        });
+    });
+
+    limpiarBtn.addEventListener('click', () => {
+        tagButtons.forEach(button => {
+            button.classList.remove('active');
+        });
+        filtrarItems();
+    });
+
+    // Estado inicial: mostrar todos los items
+    filtrarItems();
+});
+

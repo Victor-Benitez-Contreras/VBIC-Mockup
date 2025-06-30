@@ -13,15 +13,35 @@
 
 </head>
 <body>
+
+    <div id="loader-container" class="loader-container">
+        <dotlottie-player
+        src="https://vicbc.cl/verisure/img/lottiefiles/Verisure-Logo-Loader.lottie"
+        background="transparent"
+        speed="1.5"
+        style="min-width: 220px; min-height: 220px; width: 30%; height: auto;"
+        loop
+        autoplay
+        ></dotlottie-player>
+    </div>
+
     <nav class="superior-bar">
-        <img class="logo logo-verisure" src="Assets/Logo-Verisure-CL.png" alt="logo verisure">
-        <img class="logo logo-brand-interactive-center" src="Assets/Main-Logo-Animation-in-out.gif" alt="logo verisure">
+        <img class="logo logo-verisure" src="Assets/verisure_logo_2025.png" alt="logo verisure">
+        <!--<img class="logo logo-brand-interactive-center" src="Assets/Main-Logo-Animation-in-out.gif" alt="logo verisure">-->
+        <dotlottie-player
+        src="https://vicbc.cl/verisure/img/lottiefiles/Main-Logo-VBIC-Animation-in-out.json"
+        background="transparent"
+        speed="1"
+        class="logo logo-brand-interactive-center"
+        loop
+        autoplay
+        ></dotlottie-player>
     </nav>
     <header>
         <section class="principal-section">
 
             <h1 class="principal-title fira-sans-bold t-center">Bringing our brand closer</h1>
-            <p class="subtitle-version-state fira-sans-light t-center">Alpha Site v0.6</p>
+            <p class="subtitle-version-state fira-sans-light t-center">Alpha Site v0.7</p>
 
             <div class="principal-list fira-sans-bold">
 
@@ -133,7 +153,40 @@
 
             <div class="layout-container">
 
-                    <!--Box 3-->
+                    <!--Box 9-->
+                    <div class="box-card t-white bg-hard-red">
+                        <div class="vista-color">
+                            <div>
+                                <h4 class="color-title fira-sans-bold t-center">HARD RED</h4>
+                                <p class="color-subtitle fira-sans-thin t-center">Pantone 187 C</p>
+                            </div>
+
+                            <p class="color-code-p fira-sans-light t-center">HEX: <strong>#AB192D</strong></p>
+                            <p class="color-code-p fira-sans-light t-center">RGB: <strong>99, 100, 102</strong></p>
+                            <p class="color-code-p fira-sans-light t-center">CMYK: <strong>0, 0, 0, 75</strong></p>
+                        </div>
+                        <div class="selector">
+                            
+                            <select class="menu-desplegable" data-formulas-id="formulas9">
+                                <option value="formulaHexa_9">HEX CODE</option>
+                                <option value="formulaRGB_9">RGB</option>
+                                <option value="formulaCMYK_9">CMYK</option>
+                            </select>
+                            <button class="copy-btn type-1 fira-sans-bold" data-formulas-id="formulas9">Copy
+                                <svg class="copy-icon-btn" id="ICON_GREY___RED" data-name="ICON_GREY_&amp;amp;_RED" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.28 190.06">
+                                <path class="cls-1" d="M100.06,190.06H23.13c-12.75,0-23.13-10.38-23.13-23.13V50.72c0-12.75,10.38-23.13,23.13-23.13h76.93c12.75,0,23.13,10.38,23.13,23.13v116.21c0,12.75-10.38,23.13-23.13,23.13ZM23.13,41.59c-5.03,0-9.13,4.09-9.13,9.13v116.21c0,5.03,4.09,9.13,9.13,9.13h76.93c5.03,0,9.13-4.1,9.13-9.13V50.72c0-5.03-4.1-9.13-9.13-9.13H23.13Z"/>
+                                <path class="cls-1" d="M143.28,141.61c-3.87,0-7-3.13-7-7l-.03-99.33c0-5.7-2.23-11.06-6.27-15.08-4.02-4-9.35-6.2-15.01-6.2h-.1l-62.16.29h-.03c-3.85,0-6.98-3.11-7-6.97-.02-3.87,3.1-7.01,6.97-7.03l62.16-.29h.17c9.39,0,18.22,3.64,24.89,10.27,6.7,6.67,10.4,15.55,10.4,25l.03,99.33c0,3.87-3.13,7-7,7h0Z"/>
+                                </svg>
+                            </button>
+                            <div class="formulas" id="formulas9">
+                                <p id="formulaHexa_9" style="display: none;">#ab192d</p>
+                                <p id="formulaRGB_9" style="display: none;">rgb(171, 25, 45)</p>
+                                <p id="formulaCMYK_9" style="display: none;">cmyk(0, 100, 100, 30)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Box 4-->
                     <div class="box-card t-white bg-hard-grey">
                         <div class="vista-color">
                             <div>
@@ -166,7 +219,7 @@
                         </div>
                     </div>
 
-                    <!--Box 4-->
+                    <!--Box 5-->
                     <div class="box-card t-white bg-medium-gray-2">
                         <div class="vista-color">
                             <div>
@@ -200,7 +253,7 @@
                         </div>
                     </div>
 
-                    <!--Box 5-->
+                    <!--Box 6-->
                     <div class="box-card t-white bg-medium-gray">
                         <div class="vista-color">
                             <div>
@@ -234,7 +287,7 @@
                         </div>
                     </div>
 
-                    <!--Box 6-->
+                    <!--Box 7-->
                     <div class="box-card t-white bg-soft-gray-2">
                         <div class="vista-color">
                             <div>
@@ -268,7 +321,7 @@
                         </div>
                     </div>
 
-                    <!--Box 7-->
+                    <!--Box 8-->
                     <div class="box-card t-gray bg-soft-gray">
                         <div class="vista-color">
                             <div>
@@ -302,7 +355,7 @@
                         </div>
                     </div>
 
-                    <!--Box 8-->
+                    <!--Box 9-->
                     <div class="box-card t-gray bg-warm-gray">
                         <div class="vista-color">
                             <div>
@@ -345,178 +398,6 @@
             <div class="underline"></div>
 
             <div class="layout-container">
-
-
-                    <!--Box 9-->
-                    <div class="box-card t-white bg-hard-red">
-                        <div class="vista-color">
-                            <div>
-                                <h4 class="color-title fira-sans-bold t-center">HARD RED</h4>
-                                <p class="color-subtitle fira-sans-thin t-center">Pantone 187 C</p>
-                            </div>
-
-                            <p class="color-code-p fira-sans-light t-center">HEX: <strong>#AB192D</strong></p>
-                            <p class="color-code-p fira-sans-light t-center">RGB: <strong>99, 100, 102</strong></p>
-                            <p class="color-code-p fira-sans-light t-center">CMYK: <strong>0, 0, 0, 75</strong></p>
-                        </div>
-                        <div class="selector">
-                            
-                            <select class="menu-desplegable" data-formulas-id="formulas9">
-                                <option value="formulaHexa_9">HEX CODE</option>
-                                <option value="formulaRGB_9">RGB</option>
-                                <option value="formulaCMYK_9">CMYK</option>
-                            </select>
-                            <button class="copy-btn type-1 fira-sans-bold" data-formulas-id="formulas9">Copy
-                                <svg class="copy-icon-btn" id="ICON_GREY___RED" data-name="ICON_GREY_&amp;amp;_RED" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.28 190.06">
-                                <path class="cls-1" d="M100.06,190.06H23.13c-12.75,0-23.13-10.38-23.13-23.13V50.72c0-12.75,10.38-23.13,23.13-23.13h76.93c12.75,0,23.13,10.38,23.13,23.13v116.21c0,12.75-10.38,23.13-23.13,23.13ZM23.13,41.59c-5.03,0-9.13,4.09-9.13,9.13v116.21c0,5.03,4.09,9.13,9.13,9.13h76.93c5.03,0,9.13-4.1,9.13-9.13V50.72c0-5.03-4.1-9.13-9.13-9.13H23.13Z"/>
-                                <path class="cls-1" d="M143.28,141.61c-3.87,0-7-3.13-7-7l-.03-99.33c0-5.7-2.23-11.06-6.27-15.08-4.02-4-9.35-6.2-15.01-6.2h-.1l-62.16.29h-.03c-3.85,0-6.98-3.11-7-6.97-.02-3.87,3.1-7.01,6.97-7.03l62.16-.29h.17c9.39,0,18.22,3.64,24.89,10.27,6.7,6.67,10.4,15.55,10.4,25l.03,99.33c0,3.87-3.13,7-7,7h0Z"/>
-                                </svg>
-                            </button>
-                            <div class="formulas" id="formulas9">
-                                <p id="formulaHexa_9" style="display: none;">#ab192d</p>
-                                <p id="formulaRGB_9" style="display: none;">rgb(171, 25, 45)</p>
-                                <p id="formulaCMYK_9" style="display: none;">cmyk(0, 100, 100, 30)</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!--Box 10-->
-                    <div class="box-card t-white bg-orange">
-                        <div class="vista-color">
-                            <div>
-                                <h5 class="color-title fira-sans-bold t-center">MEDIUM GRAY 2</h4>
-                                <p class="color-subtitle fira-sans-thin t-center">Pantone Cool Gray 8 C</p>
-                            </div>
-                        
-                            <p class="color-code-p fira-sans-light t-center">HEX: <strong>#FF9254</strong></p>
-                            <p class="color-code-p fira-sans-light t-center">RGB: <strong>138, 140, 142</strong></p>
-                            <p class="color-code-p fira-sans-light t-center">CMYK: <strong> 0, 40, 59, 0</strong></p>
-                
-                        </div>
-                        
-                        <div class="selector">
-                            <select class="menu-desplegable" data-formulas-id="formulas10">
-                                <option value="formulaHexa_10">HEX CODE</option>
-                                <option value="formulaRGB_10">RGB</option>
-                                <option value="formulaCMYK_10">CMYK</option>
-                            </select>
-                            <button class="copy-btn type-1 fira-sans-bold" data-formulas-id="formulas10">Copy
-                                <svg class="copy-icon-btn" id="ICON_GREY___RED" data-name="ICON_GREY_&amp;amp;_RED" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.28 190.06">
-                                    <path class="cls-1" d="M100.06,190.06H23.13c-12.75,0-23.13-10.38-23.13-23.13V50.72c0-12.75,10.38-23.13,23.13-23.13h76.93c12.75,0,23.13,10.38,23.13,23.13v116.21c0,12.75-10.38,23.13-23.13,23.13ZM23.13,41.59c-5.03,0-9.13,4.09-9.13,9.13v116.21c0,5.03,4.09,9.13,9.13,9.13h76.93c5.03,0,9.13-4.1,9.13-9.13V50.72c0-5.03-4.1-9.13-9.13-9.13H23.13Z"/>
-                                    <path class="cls-1" d="M143.28,141.61c-3.87,0-7-3.13-7-7l-.03-99.33c0-5.7-2.23-11.06-6.27-15.08-4.02-4-9.35-6.2-15.01-6.2h-.1l-62.16.29h-.03c-3.85,0-6.98-3.11-7-6.97-.02-3.87,3.1-7.01,6.97-7.03l62.16-.29h.17c9.39,0,18.22,3.64,24.89,10.27,6.7,6.67,10.4,15.55,10.4,25l.03,99.33c0,3.87-3.13,7-7,7h0Z"/>
-                                </svg>
-                            </button>
-                            <div class="formulas" id="formulas10">
-                                <p id="formulaHexa_10" style="display: none;">#FF9254</p>
-                                <p id="formulaRGB_10" style="display: none;">rgb(138, 140, 142)</p>
-                                <p id="formulaCMYK_10" style="display: none;">cmyk( 0, 40, 59, 0)</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Box 11-->
-                    <div class="box-card t-gray bg-soft-orange">
-                        <div class="vista-color">
-                            <div>
-                                <h4 class="color-title fira-sans-bold t-center">SOFT ORANGE</h4>
-                                <p class="color-subtitle fira-sans-thin t-center">Pantone 474 C</p>
-                            </div>
-                        
-                            <p class="color-code-p fira-sans-light t-center">HEX: <strong>#FFC7A6</strong></p>
-                            <p class="color-code-p fira-sans-light t-center">RGB: <strong>255, 199, 166</strong></p>
-                            <p class="color-code-p fira-sans-light t-center">CMYK: <strong>0, 25, 36, 0</strong></p>
-                
-                        </div>
-                        
-                        <div class="selector">
-                            <select class="menu-desplegable" data-formulas-id="formulas11">
-                                <option value="formulaHexa_11">HEX CODE</option>
-                                <option value="formulaRGB_11">RGB</option>
-                                <option value="formulaCMYK_11">CMYK</option>
-                            </select>
-                            <button class="copy-btn type-1 fira-sans-bold" data-formulas-id="formulas11">Copy
-                                <svg class="copy-icon-btn" id="ICON_GREY___RED" data-name="ICON_GREY_&amp;amp;_RED" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.28 190.06">
-                                    <path class="cls-1" d="M100.06,190.06H23.13c-12.75,0-23.13-10.38-23.13-23.13V50.72c0-12.75,10.38-23.13,23.13-23.13h76.93c12.75,0,23.13,10.38,23.13,23.13v116.21c0,12.75-10.38,23.13-23.13,23.13ZM23.13,41.59c-5.03,0-9.13,4.09-9.13,9.13v116.21c0,5.03,4.09,9.13,9.13,9.13h76.93c5.03,0,9.13-4.1,9.13-9.13V50.72c0-5.03-4.1-9.13-9.13-9.13H23.13Z"/>
-                                    <path class="cls-1" d="M143.28,141.61c-3.87,0-7-3.13-7-7l-.03-99.33c0-5.7-2.23-11.06-6.27-15.08-4.02-4-9.35-6.2-15.01-6.2h-.1l-62.16.29h-.03c-3.85,0-6.98-3.11-7-6.97-.02-3.87,3.1-7.01,6.97-7.03l62.16-.29h.17c9.39,0,18.22,3.64,24.89,10.27,6.7,6.67,10.4,15.55,10.4,25l.03,99.33c0,3.87-3.13,7-7,7h0Z"/>
-                                </svg>
-                            </button>
-                            <div class="formulas" id="formulas11">
-                                <p id="formulaHexa_11" style="display: none;">#FFC7A6</p>
-                                <p id="formulaRGB_11" style="display: none;">RGB(255, 199, 166)</p>
-                                <p id="formulaCMYK_11" style="display: none;">CMYK(0, 25, 36, 0)</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!--Box 12-->
-                    <div class="box-card t-gray bg-yellow">
-                        <div class="vista-color">
-                            <div>
-                                <h4 class="color-title fira-sans-bold t-center">YELLOW</h4>
-                                <p class="color-subtitle fira-sans-thin t-center">Pantone 100 C</p>
-                            </div>
-                        
-                            <p class="color-code-p fira-sans-light t-center">HEX: <strong>#FFEF82</strong></p>
-                            <p class="color-code-p fira-sans-light t-center">RGB: <strong>225, 239, 130</strong></p>
-                            <p class="color-code-p fira-sans-light t-center">CMYK: <strong>0, 0, 56, 0</strong></p>
-                
-                        </div>
-                        
-                        <div class="selector">
-                            <select class="menu-desplegable" data-formulas-id="formulas12">
-                                <option value="formulaHexa_12">HEX CODE</option>
-                                <option value="formulaRGB_12">RGB</option>
-                                <option value="formulaCMYK_12">CMYK</option>
-                            </select>
-                            <button class="copy-btn type-2 fira-sans-bold" data-formulas-id="formulas12">Copy
-                                <svg class="copy-icon-btn" id="ICON_GREY___RED" data-name="ICON_GREY_&amp;amp;_RED" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.28 190.06">
-                                    <path class="cls-2" d="M100.06,190.06H23.13c-12.75,0-23.13-10.38-23.13-23.13V50.72c0-12.75,10.38-23.13,23.13-23.13h76.93c12.75,0,23.13,10.38,23.13,23.13v116.21c0,12.75-10.38,23.13-23.13,23.13ZM23.13,41.59c-5.03,0-9.13,4.09-9.13,9.13v116.21c0,5.03,4.09,9.13,9.13,9.13h76.93c5.03,0,9.13-4.1,9.13-9.13V50.72c0-5.03-4.1-9.13-9.13-9.13H23.13Z"/>
-                                    <path class="cls-2" d="M143.28,141.61c-3.87,0-7-3.13-7-7l-.03-99.33c0-5.7-2.23-11.06-6.27-15.08-4.02-4-9.35-6.2-15.01-6.2h-.1l-62.16.29h-.03c-3.85,0-6.98-3.11-7-6.97-.02-3.87,3.1-7.01,6.97-7.03l62.16-.29h.17c9.39,0,18.22,3.64,24.89,10.27,6.7,6.67,10.4,15.55,10.4,25l.03,99.33c0,3.87-3.13,7-7,7h0Z"/>
-                                </svg>
-                            </button>
-                            <div class="formulas" id="formulas12">
-                                <p id="formulaHexa_12" style="display: none;">#FFEF82</p>
-                                <p id="formulaRGB_12" style="display: none;">RGB(225, 239, 130)</p>
-                                <p id="formulaCMYK_12" style="display: none;">CMYK(0, 0, 56, 0)</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Box 13-->
-                    <div class="box-card t-gray bg-soft-yellow">
-                        <div class="vista-color">
-                            <div>
-                                <h4 class="color-title fira-sans-bold t-center">SOFT YELLOW</h4>
-                                <p class="color-subtitle fira-sans-thin t-center">Pantone 7499 C</p>
-                            </div>
-                        
-                            <p class="color-code-p fira-sans-light t-center">HEX: <strong>#FFF8CC</strong></p>
-                            <p class="color-code-p fira-sans-light t-center">RGB: <strong>255, 248, 204</strong></p>
-                            <p class="color-code-p fira-sans-light t-center">CMYK: <strong>0, 0, 0, 15</strong></p>
-                
-                        </div>
-                        
-                        <div class="selector">
-                            <select class="menu-desplegable" data-formulas-id="formulas13">
-                                <option value="formulaHexa_13">HEX CODE</option>
-                                <option value="formulaRGB_13">RGB</option>
-                                <option value="formulaCMYK_13">CMYK</option>
-                            </select>
-                            <button class="copy-btn type-2 fira-sans-bold" data-formulas-id="formulas13">Copy
-                                <svg class="copy-icon-btn" id="ICON_GREY___RED" data-name="ICON_GREY_&amp;amp;_RED" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150.28 190.06">
-                                    <path class="cls-2" d="M100.06,190.06H23.13c-12.75,0-23.13-10.38-23.13-23.13V50.72c0-12.75,10.38-23.13,23.13-23.13h76.93c12.75,0,23.13,10.38,23.13,23.13v116.21c0,12.75-10.38,23.13-23.13,23.13ZM23.13,41.59c-5.03,0-9.13,4.09-9.13,9.13v116.21c0,5.03,4.09,9.13,9.13,9.13h76.93c5.03,0,9.13-4.1,9.13-9.13V50.72c0-5.03-4.1-9.13-9.13-9.13H23.13Z"/>
-                                    <path class="cls-2" d="M143.28,141.61c-3.87,0-7-3.13-7-7l-.03-99.33c0-5.7-2.23-11.06-6.27-15.08-4.02-4-9.35-6.2-15.01-6.2h-.1l-62.16.29h-.03c-3.85,0-6.98-3.11-7-6.97-.02-3.87,3.1-7.01,6.97-7.03l62.16-.29h.17c9.39,0,18.22,3.64,24.89,10.27,6.7,6.67,10.4,15.55,10.4,25l.03,99.33c0,3.87-3.13,7-7,7h0Z"/>
-                                </svg>
-                            </button>
-                            <div class="formulas" id="formulas13">
-                                <p id="formulaHexa_13" style="display: none;">#FFF8CC</p>
-                                <p id="formulaRGB_13" style="display: none;">RGB(255, 248, 204)</p>
-                                <p id="formulaCMYK_13" style="display: none;">CMYK(1, 2, 24, 0)</p>
-                            </div>
-                        </div>
-                    </div>
 
                     <!--Box 14-->
                     <div class="box-card t-white bg-green">
@@ -671,7 +552,10 @@
     <p class="fita-sans-bold" style="color: #ffffff;">By Verisure Chile</p>
 </footer>
 
+<script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+<script src="loader.js"></script>
 <script src="index.js"></script>
+
 </body>
 
 </html>
